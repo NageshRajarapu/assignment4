@@ -1,0 +1,13 @@
+function matchHouses(step) {
+  // Each step increases the number of matchsticks by 5
+  // The initial step has 6 matchsticks
+  if (step === 0) {
+    return 0; // No matchsticks for step 0
+  } else {
+    return (step * 5) + 1; // 5 matchsticks per step plus 1 for the initial step
+  }
+}
+
+console.log(matchHouses(1)); // Output: 6
+console.log(matchHouses(4)); // Output: 21
+console.log(matchHouses(87)); // Output: 436
